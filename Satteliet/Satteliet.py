@@ -8,7 +8,7 @@ count=0
 
 # get times
 timezone = 'Europe/Amsterdam'
-timestamp_format = 'YYYY-MM-DD_HH-mm-ss'
+timestamp_format = 'HH-mm-ss'
 log_timestamp_format = "YYYY-MM-DD HH:mm:ss.SSS ZZ"
 name_format="YYYY-MM-DD"
 name = "output_images-"+arrow.now().format(name_format)
