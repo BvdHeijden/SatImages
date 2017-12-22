@@ -10,7 +10,8 @@ count=0
 timezone = 'Europe/Amsterdam'
 timestamp_format = 'YYYY-MM-DD_HH-mm-ss'
 log_timestamp_format = "YYYY-MM-DD HH:mm:ss.SSS ZZ"
-name = "europa_satteliet_infrarood"
+name_format="YYYY-MM-DD"
+name = "output_images-"+arrow.now().format(name_format)
 
 def download():
     print("["+arrow.utcnow().to(timezone).format(log_timestamp_format)+"]: Downloading '"+filename+"'..")
